@@ -190,10 +190,10 @@
 				-->
 
 				<!-- <footer class="major container medium">
-					<h3>Get shady with science</h3>
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<h3>Reach out to schedule a scan.</h3>
+					<p>We would love it if you reached out so we can find the best time to come to your Real Estate listing and create a beautiful 360 scan.</p>
 					<ul class="actions special">
-						<li><a href="#" class="button">Join our crew</a></li>
+						<li><a href="#" class="button">Send us an email</a></li>
 					</ul>
 				</footer> -->
 
@@ -203,31 +203,31 @@
 			<div id="footer">
 				<div class="container medium">
 
-					<!-- <header class="major last">
-						<h2>Questions or comments?</h2>
+					<header class="major last">
+						<h2>Feel free to reach out to schedule an appointment!</h2>
 					</header>
 
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<p>We're always trying to find new clients to work with and provide our beautiful 360 scans and photography to. 
+						Fill out the form below to send us an email.</p>
 
-					<form method="post" action="#">
+					<!-- <form> -->
 						<div class="row">
 							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
+								<input type="text" id="name" placeholder="Name" />
 							</div>
 							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
+								<input type="text" id="subject" placeholder="Subject" />
 							</div>
 							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
+								<textarea id="message" placeholder="Message" rows="6"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" onclick="send()"/></li>
 								</ul>
 							</div>
 						</div>
-					</form> -->
+					<!-- </form> -->
 
 					<!-- <ul class="icons">
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -250,6 +250,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/email.js" type="text/javascript"></script>
+			<script>
+				send();
+			</script>
 
 	</body>
 </html>
