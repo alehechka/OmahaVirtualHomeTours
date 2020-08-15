@@ -1,12 +1,12 @@
 const adamEmail = 'ajlehechka@gmail.com';
 const ryanEmail = 'ryan.a.bahn@gmail.com';
 
-const toEmails = [adamEmail, ryanEmail];
+const toEmails = [ryanEmail, adamEmail];
 
-const mailto = toEmails.reduce((acc, email) => `${acc}; ${email}`, '')
+const mailto = toEmails.reduce((acc, email) => `${email}; ${acc}`, '')
 
-function send() {
-    setTimeout(function() {
+send = () => {
+    setTimeout(() => {
       window.open("mailto:" + mailto 
       + "?subject=" + document.getElementById('subject').value 
       + "&body=" + "Hi, this is " + document.getElementById('name').value + ". \n" + document.getElementById('message').value);
